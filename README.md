@@ -46,8 +46,7 @@ class PaynowController extends Controller
             $payment->add($item['name'], $item['price']);
         }
 
-        // $response = $this->paynow->send($payment);
-        $response = $paynow->sendMobile($payment, '0771111111', 'ecocash');
+         $response = $this->paynow->send($payment);
 
         if ($response->success()) {
             // Save pollUrl in the database for tracking status later
