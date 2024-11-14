@@ -108,7 +108,7 @@ class PaynowController extends Controller
   "reference": "Invoice 1253",
   "email": authemail, //from Docs
   "phone": "0771111111",
-  "method": "ecocash",
+  "method": "ecocash", // or onemoney
   "items": [
     { "name": "Test Item", "price": 1.00 }
   ]
